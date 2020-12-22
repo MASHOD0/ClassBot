@@ -6,6 +6,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 
 def main():
+    if sys.argc != 2:
+        sys.exit("Usage : python main.py link time")
     link = sys.argv[1]
     time_to_class = sys.argv[2]
 
